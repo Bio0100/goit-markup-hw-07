@@ -97,7 +97,7 @@ address {
   padding-bottom: 94px;
 }
 
-.headr-logo {
+.navigation__headr-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -109,7 +109,7 @@ address {
   display: flex;
   margin-right: 94px;
 }
-.navigations-list {
+.navigation__link {
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -120,7 +120,7 @@ text-align: left;
   text-decoration: none;
 }
 
-.contact-link {
+.footer__contact {
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
@@ -129,14 +129,14 @@ color: rgba(255, 255, 255, 0.6);
 transition: color var(--timing-function);
 }
 
-.contact-link:hover,
-.contact-link:focus,
-.contact-headr:focus,
-.contact-headr:hover {
+.footer__contact:hover,
+.footer__contact:focus,
+.navigation__link-contact:focus,
+.navigation__link-contact:hover {
   color: var(--akcent-color);
 }
 
-.button-main-flex {
+.hero__button {
   display: flex;
   justify-content: center;
 }
@@ -194,7 +194,7 @@ color: var(--second-color);
   color: var(--second-color);
 }
 
-.list-photo {
+.teams__position {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
@@ -203,7 +203,7 @@ color: var(--second-color);
   color: var(--second-color);
 }
 
-.list-name {
+.teams__name {
   margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -277,7 +277,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   margin-bottom: 10px;
 }
 
-.logo-footer {
+.footer__logo{
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -290,11 +290,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   text-decoration: none;
   
 }
-.logo-footer span,
-.headr-logo span {
+.footer__logo span,
+.navigation__headr-logo span {
   color: var(--akcent-color);
 }
-.list-team {
+.container-main section outline{
   background-color: var(--background);
   font-size: 16px;
   font-weight: 500;
@@ -305,11 +305,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 .color-hero {
   background-color: var(--white-color);
 }
-.headr-logo,
+.navigation__headr-logo,
 .logo-list {
   cursor: pointer;
 }
-.work-m {
+.work__style {
   margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -319,7 +319,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     color: var(--title-color);
   color: var(--color-text);
 }
-.hero-style {
+.hero__style {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -335,7 +335,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   color: var(--white-color);
 }
 
-.contact-headr{
+.navigation__link-contact{
   display: flex;
   align-items: center;
   font-family: "Roboto";
@@ -374,12 +374,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   align-items: center;
 }
 
-.navigations-list,
-.contact-link-headr {
+.navigation__link,
+.footer__contact-headr {
   padding: 32px 0;
 }
 
-.contact-header {
+.navigation__list-contact {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -391,14 +391,14 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   align-items: center;
   
 }
-.list-nav {
+.navigation__list {
   display: flex;
   align-items: center;
 }
-.contact-header .navigation-item:not(:last-child) {
+.navigation__list-contact .navigation__item:not(:last-child) {
   margin-right: 53px;
 }
-.list-nav .navigation-item:not(:last-child) {
+.navigation__list .navigation__item:not(:last-child) {
   margin-right: 53px;
 }
 .hero {
@@ -413,7 +413,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   background-repeat: no-repeat;
   background-color: #2f303a;
 }
-.card-set {
+.features-list{
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -424,7 +424,15 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   justify-content: space-between;
 }
 
-.team {
+.list-team{
+  background-color: var(--background);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  
+}
+.team__item {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -439,6 +447,19 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.metas{
+  display: flex;
+  flex-basis: calc(100% / 9);
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  gap: 30px;
+  
+}
+
 .list-project{
   display: flex;
   flex-basis: calc(100% / 9);
@@ -451,7 +472,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   gap: 30px;
   
 }
-.list-teams{
+.team__list{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
@@ -486,21 +507,21 @@ border-radius: 0px 0px 4px 4px;
   max-width: 270px;
 
 }
-.features section{
+.features__section{
   padding: 94px 0;
 }
-.main-work{
+.work__list{
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.contact_mail {
+.navigation__icon-mail {
   width: 16px;
   height: 12px;  
   margin-right: 10px;
 }
-.contact_phone {
+.navigation__icon-phone {
 height: 16px;
 width: 10px;
 margin-right: 10px;
@@ -572,7 +593,7 @@ width: 70px;
   color: #2196F3;
   transition: color var(--timing-function);
 }
-  .footer-work{
+  .footer__text{
 font-family: Roboto;
 font-size: 14px;
 font-weight: 700;
@@ -601,7 +622,7 @@ text-align: left;
       color: #fff;
     }
 
-.footer-all {
+.footer{
   display: flex;
   align-items: baseline;
   background-color: #2f303a;
@@ -611,7 +632,7 @@ text-align: left;
     background-color: #2196F3;
     }
 
-    .footer-work{
+    .footer__text{
       margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -634,10 +655,10 @@ text-align: left;
         letter-spacing: 0.03em;
         background-color: var(--white-color);
       }
-      .contact-links:not(:last-child) {
+      .footer__contact-list:not(:last-child) {
         margin-bottom: 9px;
     }
-    .list-teams{
+    .team__list{
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding: 0;}
@@ -654,7 +675,7 @@ text-align: left;
       margin-right: auto;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im18.jpg);
       background-size: cover;}
-      .contact-map{
+      .footer__map{
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -694,7 +715,8 @@ text-align: left;
         padding: 40px;
         background-color: #FFFFFF;
         border-radius: 4px;
-        transform: translate(-50%, -50%);        
+        transform: translate(-50%, -50%);      
+        transition: transform var(--timing-function);     
       }
       
       .modal-close{
@@ -709,7 +731,12 @@ text-align: left;
         border-radius: 50%;
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        transition: var(--timing-function);
+        transition: fill var(--timing-function);
+        
+      }
+      .modal-close:hover,
+      .modal-close:focus {
+        fill: var(--accent-color);
       }
 
       .icon-cls {
@@ -721,18 +748,18 @@ text-align: left;
       .items:not(:last-child) {
           margin-right: 30px;
       }
-      .navigations-list{
+      .navigation__link{
         position: relative;
         display: inline-flex;
         align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-        .navigations-list:hover,
-        .navigations-list:focus{
+        .navigation__link:hover,
+        .navigation__link:focus{
           color: #2196f3;
         }
-      .navigations-list::after{
+      .navigation__link::after{
       position: absolute;
       bottom: 0;
       right: 0;
@@ -754,15 +781,15 @@ text-align: left;
       transition-delay: 0s, 0s;
         
       }
-      .navigations-list .current:hover::after,
-      .navigations-list .current:focus::after {
+      .navigation__link .current:hover::after,
+      .navigation__link .current:focus::after {
         transform: scale(1);
         opacity: 1;}
       
-        .work-typ{
+        .work__main{
           position: relative;
         }
-        .work-typ-sub{
+        .work__text{
           position: absolute;
           bottom: 0;
           padding-top: 27px;
@@ -820,10 +847,10 @@ text-align: left;
          padding-top: 30px;
          padding-bottom: 30px;
         }
-        .modal-register{
+        .register{
           display: block;
         }
-        .modal-hr{
+        .modal__text{
           font-size: 20px;
           font-weight: 700;
           line-height: 23px;
@@ -831,21 +858,21 @@ text-align: left;
           text-align: center;
           margin-bottom: 12px;
         }
-        .form-opts{
+        .register__form-opts{
           position: relative;
           display: flex;
           flex-direction: column;
           margin-bottom: 10px;
           
         }
-        .form-word{
+        .register__form-word{
           width: 100%;
           padding: 10px 11px 10px 42px;
           border: 1px solid rgba(33, 33, 33, 0.2);
           border-radius: 4px;
           transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .form-icon {
+        .form__icon {
           position: absolute;
           top: 50%;
           left: 12px;
@@ -855,14 +882,14 @@ text-align: left;
         }
 
         
-        .psp{
+        .register__text{
           margin-bottom: 4px;
           font-size: 12px;
           line-height: 1.17;
           letter-spacing: 0.01em;
           color: #757575;
         }
-        .form-textarea{
+        .register__textarea{
           padding: 12px 16px;
           height: 120px;
           border: 1px solid rgba(33, 33, 33, 0.2);
@@ -885,7 +912,7 @@ text-align: left;
           height: 15px;
           border: 2px solid #212121;;
           border-radius: 2px;}
-        .form__link {
+        .register__link {
           color: #2196f3;
           text-decoration: underline;}
         .form__label-checkbox {
@@ -940,26 +967,46 @@ text-align: left;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z' fill='%23fff'/%3E%3C/svg%3E");
   
 }
-            .form-word, 
-            .form-textarea {   
+            .register__form-word, 
+            .register__textarea {   
               border: 1px solid rgba(33, 33, 33, 0.2);
               border-radius: 4px;
               transform: border-color var(--timing-function);
             }            
       
-            .form-word:hover,
-            .form-word:focus,
-            .form-textarea:hover,
-            .form-textarea:focus {
+            .register__form-word:hover,
+            .register__form-word:focus,
+            .register__textarea:hover,
+            .register__textarea:focus {
               outline: none;
               border-color: #2196f3;
             }
 
             
 
-            .form-word:hover ~ .form-icon,
-            .form-word:focus ~ .form-icon,
-            .form-textarea:hover ~ .form-icon,          
-            .form-textarea:focus ~ .form-icon {
+            .register__form-word:hover ~ .form__icon,
+            .register__form-word:focus ~ .form__icon,
+            .register__textarea:hover ~ .form__icon,          
+            .register__textarea:focus ~ .form__icon {
               color: var(--accent-color);
+           
+            /* .project-link {
+              display: inline-block;
+              transition: box-shadow var(--timing-function);
             }
+            
+            .project-link:hover,
+            .project-link:focus {
+              box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+              0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+            .project-link:hover .new-texs{
+              transform: translateY(-100%);
+            }
+            .project-es {
+              position: relative;
+              overflow: hidden;
+               }
+    
+     */
