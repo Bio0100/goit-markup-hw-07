@@ -659,11 +659,6 @@ text-align: left;
     border-radius: 0px 0px 4px 4px;
     padding: 0;}
     
-    .socials__list{
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
     .hero-owerlay{
       max-width: 1600px;
       height: 600px;
