@@ -9,35 +9,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-<link rel="stylesheet" href="./css/styles.css">
+<!-- <link rel="stylesheet" href="./css/styles.css"> -->
+<link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-flex-container">
-            <nav class="header__navigation">
-                <a class="headr-logo" href=""><span>Web</span>Studio</a>
-                <ul class="list-nav">
-                    <li  class="navigation-item">
-                        <a href="./index.html" class="navigations-list current">Студия</a>
+            <nav class="header__navigation navigation">
+                <a class="navigation__headr-logo" href="#"><span>Web</span>Studio</a>
+                <ul class="navigation__list">
+                    <li  class="navigation__item">
+                        <a href="./index.html" class="navigation__link">Студия</a>
                     </li>
-                    <li class="navigation-item">
-                        <a href="./portfolio.html" class="navigations-list">Портфолио</a>
+                    <li class="navigation__item">
+                        <a href="./portfolio.html" class="navigation__link current">Портфолио</a>
                     </li>
-                    <li class="navigation-item">
-                        <a href="./index.html" class="navigations-list">Контакты</a>
+                    <li class="navigation__item">
+                        <a href="./index.html" class="navigation__link">Контакты</a>
                     </li>
                 </ul>
             </nav>             
-            <ul class="contact-header">
-                <li class="navigation-item">
-                    <a href="mailto:info@devstudio.com" class="contact-headr">
-                    <svg class="contact_mail">
+            <ul class="navigation__list-contact">
+                <li class="navigation__item">
+                    <a href="mailto:info@devstudio.com" class="navigation__link-contact">
+                    <svg class="navigation__icon-mail">
                         <use href="./images/symbol-defs.svg#mail"></use>
                     </svg>
                     info@devstudio.com</a>
                 </li>
-                <li class="navigation-item"><a href="tel:+380961111111" class="contact-headr">
-                    <svg class="contact_phone">
+                <li class="navigation__item"><a href="tel:+380961111111" class="navigation__link-contact">
+                    <svg class="navigation__icon-phone">
                         <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -48,137 +49,142 @@
     <main>
         <section class="struducture">
         <div class="container">
-            <ul class="button-cont">
-                <li class="button-control"><button type="button" class="btn-control">Все</button></li>
-                <li class="button-control"><button type="button" class="btn-control">Веб-сайты</button></li>
-                <li class="button-control"><button type="button" class="btn-control">Приложения</button></li>
-                <li class="button-control"><button type="button" class="btn-control">Дизайн</button></li>
-                <li class="button-control"><button type="button" class="btn-control">Маркетинг</button></li>
+            <ul class="button__control">
+                <li class="button__list">
+                    <button type="button" class="button__item">Все</button></li>
+                <li class="button__list">
+                    <button type="button" class="button__item">Веб-сайты</button></li>
+                <li class="button__list">
+                    <button type="button" class="button__item">Приложения</button></li>
+                <li class="button__list">
+                    <button type="button" class="button__item">Дизайн</button></li>
+                <li class="button__list">
+                    <button type="button" class="button__item">Маркетинг</button></li>
             </ul>
-            <ul class="list-project">
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+            <ul class="project">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im9.jpg"  width="370" height="294" alt="фото Технокряк">
-                    <div class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Технокряк</h2>
-                    <p class="text">Веб-сайт</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Технокряк</h2>
+                    <p class="project__example-text">Веб-сайт</p>
                     </div>
                 </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
-                        <img src="./images/im10.jpg" width="370" height="294" alt="фото Постер New Orlean vs Golden Star">
-                    <div class="new-texs">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
-                    </div> 
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
+                        <img src="./images/im10.jpg"  width="370" height="294" alt="фото Технокряк">
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Постер New Orlean vs Golden Star</h2>
-                    <p class="text">Дизайн</p>
                     </div>
-                    </a>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Постер New Orlean vs Golden Star</h2>
+                    <p class="project__example-text">Дизайн</p>
+                    </div>
+                </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im11.jpg" width="370" height="294" alt="фото Ресторан Seafood">
-                    <div class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div> 
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Ресторан Seafood</h2>
-                    <p class="text">Приложения</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Ресторан Seafood</h2>
+                    <p class="project__example-text">Приложения</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im12.jpg" width="370" height="294" alt="фото Проект Prime">
-                    <div class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div> 
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Проект Prime</h2>
-                    <p class="text">"Маркетинг</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Проект Prime</h2>
+                    <p class="project__example-text">"Маркетинг</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im13.jpg" width="370" height="294" alt="фото Проект Boxes">
-                    <div class="project-texts"project-texts>
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div> 
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Проект Boxes</h2>
-                    <p class="text">Приложения</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Проект Boxes</h2>
+                    <p class="project__example-text">Приложения</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im14.jpg" width="370" height="294" alt="фото сайта Inspiration has no Borders">
-                    <div class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div> 
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Inspiration has no Borders</h2>
-                    <p class="text">Веб-сайт</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Inspiration has no Borders</h2>
+                    <p class="project__example-text">Веб-сайт</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im15.jpg" width="370" height="294" alt="фото Издание Limited Edition">
-                        <div class="project-texts">
-                            <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                        <div class="project__texts">
+                            <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                         </div> 
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Издание Limited Edition</h2>
-                    <p class="text">Дизайн</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Издание Limited Edition</h2>
+                    <p class="project__example-text">Дизайн</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                        <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                        <div class="project__photo">
                             <img src="./images/im16.jpg" width="370" height="294" alt="фото Проект LAB">
-                    <div class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                         </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Проект LAB</h2>
-                    <p class="text">Маркетинг</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Проект LAB</h2>
+                    <p class="project__example-text">Маркетинг</p>
                     </div>
                     </a>
                 </li>
-                <li class="projects">
-                    <a href="#" class="project-link">
-                    <div class="project-photo">
+                <li class="project__list">
+                    <a href="#" class="project__link">
+                    <div class="project__photo">
                         <img src="./images/im17.jpg" width="370" height="294" alt="фото картинки Growing Business">
-                    <div  class="project-texts">
-                        <p class="cart-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
+                    <div  class="project__texts">
+                        <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     </div>
-                    <div class="project-text">
-                    <h2 class="meta-if">Growing Business</h2>
-                    <p class="text">Приложение</p>
+                    <div class="project__text-img">
+                    <h2 class="project__text-name">Growing Business</h2>
+                    <p class="project__example-text">Приложение</p>
                     </div>
                     </a>
                 </li>
@@ -187,25 +193,25 @@
         </section>
     </main>
     <footer>
-        <div class="container footer-all">
+        <div class="container footer">
             <div class="footer__flex-item">
-                <a class="logo-footer" href=""><span>Web</span>Studio</a>
+                <a class="footer__logo" href=""><span>Web</span>Studio</a>
                 <address>
-                    <ul class="contact">
-                        <li class="contact-links">
-                            <a class="contact-map"> г. Киев, пр-т Леси Украинки, 26 </a>
+                    <ul class="footer__item">
+                        <li class="footer__contact-list">
+                            <a class="footer__map"> г. Киев, пр-т Леси Украинки, 26 </a>
                         </li>
-                        <li class="contact-links">
-                            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="footer__contact-list">
+                            <a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="contact-links">
-                            <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="footer__contact-list">
+                            <a class="footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="footer__flex-item">
-                <h2 class="footer-work">Присоединяйтесь</h2>
+                <h2 class="footer__text">Присоединяйтесь</h2>
                 <ul class="team__socials-list socials__list">
                     <li class="team__socials-item socials__item">
                         <a class="team__socials-link socials__link" href="#">
@@ -238,7 +244,7 @@
                 </ul> 
             </div>
             <div class="footer__flex-item">
-                <h2 class="footer-work">Подпишитесь на рассылку</h2>
+                <h2 class="footer__text">Подпишитесь на рассылку</h2>
                 <form class="footer__form js-speaker-form" name="subscribe-form">                    
                     <input class="footer__input-email" type="email" name="subscribe-email" autocomplete="email" placeholder="E-mail">
                     <button class="button-main" type="submit">Подписаться</button>
