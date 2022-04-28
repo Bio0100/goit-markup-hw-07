@@ -77,12 +77,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color $timing-function;
-
-    &:hover,
-    &:focus,
-    &--current {
-        color: $accent-color;
-    }
 }
     
 .navigation__link::after {
@@ -99,17 +93,20 @@
   opacity: 0;
   transition: transform $timing-function,
     opacity $timing-function;
-
-  .current::after,
-  &:hover::after,
-  &:focus::after {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
-    .current{
-      color: $akcent-color;
-    }
+
+.current:hover::after,
+.current:focus::after {
+        transform: scale(1);
+        opacity: 1;}
+
+.current::after, .navigation__link .current:hover::after, .navigation__link .current:focus::after {
+      transform: scale(1);
+      opacity: 1;
+        }
+.current{
+      color: #2196F3;
+        }
     .navigation__list-contact {
       display: flex;
       margin-left: auto;
