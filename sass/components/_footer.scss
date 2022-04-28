@@ -40,10 +40,11 @@ footer {
     background-color: $white-color;
     border-radius: 50%;
     transition: background-color $timing-function, 
-    color $timing-function; }
-  // .footer__flex-item, .socials__link {
-  //   background-color: $footer-socials-bg-color;
-  // }
+    color $timing-function;
+    .footer__flex-item &:hover,
+    .footer__flex-item &:focus{
+    background-color: #2196F3;}
+    }
   .footer__contact-list:not(:last-child) {
     margin-bottom: 9px;
 }
