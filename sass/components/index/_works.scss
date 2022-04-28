@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .container-main.section {
+    padding-top: 0;
+}
   .work__list{
     display: flex;
     justify-content: center;
@@ -36,3 +39,4 @@
       letter-spacing: 0.03em;
     color: $color-text;
   }
+  

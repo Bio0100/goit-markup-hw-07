@@ -43,6 +43,11 @@ address {
   padding-right: 15px;
 }
 
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 textarea {
   resize: none;
 }
@@ -317,6 +322,10 @@ button {
   justify-content: space-between;
 }
 
+.container-main.section {
+  padding-top: 0;
+}
+
 .work__list {
   display: flex;
   justify-content: center;
@@ -361,11 +370,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .team__item {
   display: flex;
   justify-content: center;
@@ -376,7 +380,6 @@ button {
 .team__list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
   background-color: #ffffff;
 }
 
@@ -400,7 +403,7 @@ button {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: #757575;
 }
 
 .socials__list {
@@ -413,21 +416,21 @@ button {
   list-style: none;
 }
 
-.socials__link {
+.socials__link-team {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  color: #AFB1B8;
-  background-color: #fff;
+  color: #afb1b8;
+  background-color: #ffffff;
   border-radius: 50%;
-  transition: background-color var(--timing-function), color var(--timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__link:hover, .socials__link:focus {
-  background-color: var(--accent-color);
-  color: #fff;
+.socials__link-team:hover, .socials__link-team:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .socials__icon {
@@ -450,7 +453,7 @@ button {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company__link:hover, .company__link:focus {
@@ -468,7 +471,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  background-color: var(--white-color);
+  background-color: #ffffff;
 }
 
 .modal {
